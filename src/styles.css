@@ -1,0 +1,140 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-size: 100%;
+  /*background-image: url('./images/diego-ph-5LOhydOtTKU-unsplash.jpg');*/
+  background-color: black;
+  background-repeat: 'no-repeat';
+  background-position: 0 0;
+  color: aliceblue;
+  margin: 0;
+  padding: 0
+}
+
+.projects {
+  margin: 10rem 10rem 0 10rem;
+}
+
+.projects .inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .inside p {
+  font-size: 1.25rem;
+}
+
+.projects .inside h1 {
+  margin: 0;
+  font-size: 7.5rem
+}
+
+.projects .projects-table {
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 0.25rem;
+  border-color: slategrey;
+  margin-top: 5rem;
+  padding: 1rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .projects-table .search {
+  opacity: 0.25;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: solid;
+  border-width: 0.1rem;
+}
+
+.projects .projects-table .search img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.projects .projects-table .projects-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 1rem;
+  flex-grow: 1;
+  overflow: scroll;
+  scroll-behavior:auto;
+}
+
+.projects .projects-table .projects-content .sidebar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.projects .projects-table .projects-content .sidebar p {
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.projects .projects-table .projects-content .content {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+  margin: 10rem 10rem 0 10rem;
+}
+
+.title .profile {
+  width: 50%;
+}
+
+.title .inside {
+  width: 30%;
+}
+
+.title .inside h1, h2 {
+  margin: 0;
+}
+
+.title .inside h1 {
+  font-size: 7.5rem
+}
+
+.title .inside h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color:steelblue
+}
+
+.title .inside p {
+  font-size: 1.25rem;
+  margin-top: 5rem;
+}
+
+.title .inside ul {
+  list-style-type: none;
+  padding: 0
+}
