@@ -13,6 +13,43 @@ body {
   padding: 0
 }
 
+.education {
+  margin: 10rem 10rem 0 10rem;
+}
+
+.education .inside p {
+  font-size: 1.25rem;
+}
+
+.education .inside h1 {
+  margin: 0;
+  font-size: 7.5rem
+}
+
+.education .education-content ul {
+  margin-top: 3rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: scroll;
+  overflow-wrap: normal;
+  list-style: none;
+}
+
+.education .education-content ul li {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  border-color: slategrey;
+  margin: 0 2rem 0.5rem 2rem;
+  padding: 1rem;
+  min-width: 15rem;
+  height: 7.5rem;
+}
+
+
 .projects {
   margin: 10rem 10rem 0 10rem;
 }
@@ -33,27 +70,41 @@ body {
 }
 
 .projects .projects-table {
-  border-style: solid;
-  border-radius: 1rem;
-  border-width: 0.25rem;
-  border-color: slategrey;
-  margin-top: 5rem;
-  padding: 1rem;
+  margin-top: 1rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
 }
 
 .projects .projects-table .search {
-  opacity: 0.25;
-  color: white;
+  opacity: 1;
   display: flex;
   flex-direction: row;
   justify-content: start;
-  align-items: center;
-  border-bottom: solid;
-  border-width: 0.1rem;
+  align-items: last baseline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex: 1 1 0;
 }
+
+.projects .projects-table .search input[type=text] {
+  background-color: black;
+  opacity: 1;
+  flex-grow: 1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: slategrey;
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: aliceblue;
+  outline: none;
+}
+
+.projects .projects-table .search input[type=text]::placeholder {
+  color: #545454;
+}
+
 
 .projects .projects-table .search img {
   width: 1.25rem;
@@ -62,40 +113,72 @@ body {
 }
 
 .projects .projects-table .projects-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 5fr;
   justify-content: space-between;
-  align-items: stretch;
   margin-top: 1rem;
-  flex-grow: 1;
-  overflow: scroll;
-  scroll-behavior:auto;
+  overflow: hidden;
+  flex: 5 1 0;
 }
 
 .projects .projects-table .projects-content .sidebar {
-  width: 15%;
+  grid-area: "sidebar";
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  justify-content: space-between;
+  overflow: scroll;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 1rem;
 }
 
-.projects .projects-table .projects-content .sidebar p {
+.projects .projects-table .projects-content .sidebar ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects .projects-table .projects-content .sidebar ul li button {
   border-style: solid;
   border-width: 0.1rem;
   border-radius: 0.5rem;
+  border-color: slategrey;
   margin-top: 0;
   margin-bottom: 0.5rem;
   padding: 1rem;
+  text-decoration: none;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+  width: 100%;
+  height: 6rem;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.projects .projects-table .projects-content .sidebar ul li button:hover {
+  background-color: slategrey;
+}
+
+.projects .projects-table .projects-content .sidebar ul li button:active {
+  background-color: #4f4f4f;
 }
 
 .projects .projects-table .projects-content .content {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem 1rem 0 1rem;
   border-style: solid;
   border-width: 0.1rem;
   border-radius: 0.5rem;
+  border-color: slategrey;
   padding: 1rem;
-  position: sticky;
-  top: 0;
+  grid-area: "content";
+  overflow: scroll;
+  white-space: pre-line;
 }
 
 .title {
@@ -126,7 +209,7 @@ body {
 .title .inside h2 {
   font-size: 2rem;
   margin-top: 0.5rem;
-  color:steelblue
+  color: #d4af37;
 }
 
 .title .inside p {
@@ -137,4 +220,8 @@ body {
 .title .inside ul {
   list-style-type: none;
   padding: 0
+}
+
+.footer {
+  margin: 10rem 10rem 0 10rem;
 }
