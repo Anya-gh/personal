@@ -2,14 +2,14 @@ import React from 'react'
 import '../styles.css'
 const icon = require('../images/icons8-search-50.png')
 
-export default function Search( {searchQuery, setSearchQuery, items, setFilteredItems} ) {
+export default function Search( {searchQuery, setSearchQuery, projects, setFilteredProjects} ) {
 
   function onChangeHandler(e) {
     let input = e.target.value
     setSearchQuery(input);
-    setFilteredItems(items.filter(item => item.title.toLowerCase().includes(input.toLowerCase())));
+    setFilteredProjects(projects.filter(item => item.title.toLowerCase().includes(input.toLowerCase())));
     console.log(searchQuery);
-    console.log(items);
+    console.log(projects);
   }
 
   return (

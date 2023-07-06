@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles.css'
 
-export default function Sidebar( { filteredItems, setActive } ) {
+export default function Sidebar( { filteredProjects, setActive } ) {
 
   const onClickHandler = (e) => {
     setActive(e.target.id);
@@ -11,7 +11,7 @@ export default function Sidebar( { filteredItems, setActive } ) {
     <>
       <div className='sidebar'>
         <ul>
-          {filteredItems.map((item) => (
+          {filteredProjects.map((item) => (
           <li key={item.id}><button id={item.id} onClick={onClickHandler}>{item.title}</button></li>
           ))}
         </ul>
