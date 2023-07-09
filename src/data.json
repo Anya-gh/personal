@@ -1,0 +1,58 @@
+{
+  "projects" : [{
+    "id": 0,
+    "title": "Fighting Game Analysis Engine",
+    "keywords": ["Machine Learning", "Python"],
+    "date": "3rd year (2021)",
+    "role": "",
+    "description": "Analysis engines are tools to get better at games; each action is given a score, which lets players identify their mistakes (if an action they made has a poor score, then it's a mistake), and shows them what they should have done instead. These are very common in chess, but I wanted to apply them to my favourite genre: fighting games. Many people like the idea of fighting games but struggle to get started due to the high barrier of entry in terms of difficulty, and I wanted to use this as a means to help those players. The game I picked to develop it for was Guilty Gear Strive. \n Fighting games don't have turns, but actions can be still be thought of as objectively `good` or `bad`, albeit with less certainty.",
+    "tech_stack": "Python, with ML models implemented in Scikit-learn.",
+    "learnings": "Primarily, my time management skills developed well through this project, as well as understand how to prioritise and schedule different tasks. More generally, I learnt a lot about managing a project well, and communicating ideas effectively, both in reporting to my project supervisor and in preparing and delivering my presentation on the project."
+  },
+  {
+    "id": 1,
+    "title": "Music humanisation",
+    "keywords": ["Machine Learning", "Python", "Music", "Neural Networks", "PyTorch"],
+    "date": "4th year (2022)",
+    "role": "Project manager and software engineer",
+    "description": "Music generation is a popular field, and much has been done to create AI music already. My group and I wanted to tackle the task of playback; computer playback still lags far behind human performance, and lacks the same degree of emotion and expression. The task was thus as follows: given a score for some piece, play the piece back as a human would, with additional, optional instructions, such as Allegro (to play lively; latin words like this can often be found as annotations on sheet music).",
+    "tech_stack": "Python, mainly using PyTorch for ML. For signal processing we used librosa in tandem with pretty-midi. NumPy was also used in some of the algorithms we implemented.",
+    "learnings": "Communication was a key factor in this project, due to the number of people. We had issues with some team members failing to contribute, which I was able to navigate well. Delegating work was another issue, as we struggled to parallelise the work flow in some cases. Better planning would have helped avoid this, but it was difficult to have all team members present in one place due to our different schedules. Instead, we could have had a dedicated member for planning, and have everyone else give feedback."
+  },
+  {
+    "id": 2,
+    "title": "Live conference review tool",
+    "keywords": ["React", "SQL", "Prisma", "API", "Python", "Flask"],
+    "date": "2nd year (2020)",
+    "role": "Project manager",
+    "description": "Working with a group of other students, our task was to create a tool that conference speakers and attendees could use to view or give feedback respectively, to be implemented as a web application. The feedback needed to be available in real time; for instance, if the speaker was not loud enough, the tool would allow attendees to communicate this to the speaker, who could fix this is in real time. Functionality to give more detailed feedback in post was also required. Finally, it was necessary to store given feedback, to allow the speaker to review how their conference went after it was completed. This meant implementing a database that could communicate with the front-end.",
+    "tech_stack": "React for the front-end, Prisma and SQL for the database, and Python to create an API to allow the two to communicate with Flask.",
+    "learnings": "This was my first group project, and first time as project manager. Overall, I should have done a better job delegating and dividing work. In addition, giving people responsibility for different parts of the project led to silos, and the lack of communication caused issues to be discovered too late. We were still able to deliver a finished product, but it was not to the standard I'd hoped to achieve. I was grateful to get the chance to use React, as it was my first exposure to web development and building out a front-end with functional user interactivity."
+  },
+  {
+    "id": 3,
+    "title": "Multi-threaded packet sniffer",
+    "keywords": ["Networks", "C"],
+    "date": "2nd year (2020)",
+    "role": "",
+    "description": "This project was part of a course on learning C, and combining that with basic knowledge of networking. The problem involved defending against different networking attacks, such as SYN attacks and ARP cache poisoning.",
+    "tech_stack": "Python, mainly using PyTorch for ML. For signal processing we used librosa in tandem with pretty-midi. NumPy was also used in some of the algorithms we implemented.",
+    "learnings": "Learning C was the most important takeaway from this project. I had only worked with high-level languages previously, and this was my first exposure to many important aspects of any application, such as garbage collection and threading."
+  }],
+  "education" : [{
+    "id": 0,
+    "title": "University of Warwick",
+    "qualification": "Undergraduate degree",
+    "date": "2019-2022",
+    "grades": "First Class",
+    "courses": ["Computer Science MEng"]
+  },
+  {
+    "id": 1,
+    "title": "Northampton School for Boys",
+    "qualification": "A-levels",
+    "date": "2017-2019",
+    "grades": "A*, A*, A*",
+    "courses": ["Maths, Further Maths, Computing"]
+  }]
+}

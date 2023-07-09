@@ -234,6 +234,51 @@ body {
   white-space: pre-line;
 }
 
+.projects .projects-table .projects-content .content ul {
+  list-style: circle;
+  text-decoration: none;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  list-style-position: outside;
+}
+
+.projects .projects-table .projects-content .content .project-top {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+.projects .projects-table .projects-content .content .project-top .project-title {
+  width: 100%;
+}
+
+.projects .projects-table .projects-content .content .project-top .role {
+  margin: 0;
+  padding: 0;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.projects .projects-table .projects-content .content .project-top .role h4 {
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+  color: lightslategrey;
+  float: left;
+}
+
+.projects .projects-table .projects-content .content .project-top .role p {
+  margin: 0;
+  padding: 0;
+}
+
+
 .projects .projects-table .projects-content .content .keywords {
   color: lightslategrey;
   display: flex;
@@ -253,8 +298,8 @@ body {
 
 .projects .projects-table .projects-content .content .project-items .project-item h4 {
   color: #d4af37;
-  float: left;
-  margin: 0 0.5rem 0 0;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
 .title {
