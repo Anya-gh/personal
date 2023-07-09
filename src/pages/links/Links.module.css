@@ -1,0 +1,50 @@
+.links {
+  margin: 10rem 10rem 0 10rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.inside {
+  flex-grow: 1.5;
+}
+
+.inside p {
+  font-size: 1.25rem;
+}
+
+.inside h1 {
+  margin: 0;
+  font-size: 7.5rem
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: baseline;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon_link {
+  justify-self: start;
+  width: 80%;
+  text-decoration: none;
+  color: #d4af37;
+}
+
+.icon_img img {
+  height: 5rem;
+  width: auto;
+  margin: 1rem;
+}

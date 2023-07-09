@@ -1,0 +1,38 @@
+.education {
+  margin: 10rem 10rem 0 10rem;
+}
+
+.inside p {
+  font-size: 1.25rem;
+}
+
+.inside h1 {
+  margin: 0;
+  font-size: 7.5rem
+}
+
+.education_content ul {
+  margin-top: 3rem;
+  padding: 0;
+  list-style: none;
+}
+
+.education_content ul li {
+  text-decoration: none;
+  margin: 0 0 3rem 0;
+}
+
+.education_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education_section * {
+  margin: 0;
+  padding: 0;
+}
+
+.education_section h3 {
+  color: #d4af37;
+}

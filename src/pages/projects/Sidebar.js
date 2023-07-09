@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles.css'
+import styles from './Projects.module.css'
 
 export default function Sidebar( { filteredProjects, setActive } ) {
 
@@ -9,7 +9,7 @@ export default function Sidebar( { filteredProjects, setActive } ) {
 
   return (
     <>
-      <div className='sidebar'>
+      <div className={styles.sidebar}>
         <ul>
           {filteredProjects.map((item) => (
           <li key={item.id}><button id={item.id} onClick={onClickHandler}>{item.title}</button></li>

@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles.css'
-import Title from './Title'
-import Projects from './Projects'
-import Education from './Education'
-import Links from './Links'
-import Footer from './Footer'
+import Title from './title/Title'
+import Projects from './projects/Projects'
+import Education from './education/Education'
+import Links from './links/Links'
+import Footer from './footer/Footer'
+import './styles.css'
 
 export default function Home() {
 

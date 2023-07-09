@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import Search from '../components/Search'
-import Sidebar from '../components/Sidebar'
-import ProjectsTable from '../components/ProjectsTable'
+import Search from './Search'
+import Sidebar from './Sidebar'
+import ProjectsTable from './ProjectsTable'
+import styles from './Projects.module.css'
 
-const projects = require('../data.json')['projects']
+const projects = require('../../data.json')['projects']
 
 export default function Projects() {
 
@@ -13,16 +14,16 @@ export default function Projects() {
 
   return (
     <>
-    <div className='projects'>
-      <div className='inside'>
+    <div className={styles.projects}>
+      <div className={styles.inside}>
         <h1>Projects</h1>
         <p>Some of the projects I've worked on in my free time and at University. 
           Each one shows the tech stack I used, some of the main learnings and general information about them.
         </p>
       </div>
-      <div className='projects-table'>
+      <div className={styles.projects_table}>
         <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} projects={projects} setFilteredProjects={setFilteredProjects}/>
-        <div className='projects-content'>
+        <div className={styles.projects_content}>
           <Sidebar filteredProjects={filteredProjects} setActive={setActive}/>
           <ProjectsTable active={active} projects={projects}/>
         </div>
